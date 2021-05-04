@@ -1,0 +1,151 @@
+<ref *1> Sequelize {
+  options: {
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: '127.0.0.1',
+    protocol: 'tcp',
+    define: {},
+    query: {},
+    sync: {},
+    timezone: '+00:00',
+    clientMinMessages: 'warning',
+    standardConformingStrings: true,
+    logging: [Function: log],
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: {},
+    quoteIdentifiers: true,
+    hooks: {},
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: 0,
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    username: 'root',
+    password: 'root',
+    database: 'board'
+  },
+  config: {
+    database: 'board',
+    username: 'root',
+    password: 'root',
+    host: '127.0.0.1',
+    port: 3306,
+    pool: {},
+    protocol: 'tcp',
+    native: false,
+    ssl: undefined,
+    replication: false,
+    dialectModule: null,
+    dialectModulePath: null,
+    keepDefaultTimezone: undefined,
+    dialectOptions: undefined
+  },
+  dialect: <ref *2> MysqlDialect {
+    sequelize: [Circular *1],
+    connectionManager: ConnectionManager {
+      sequelize: [Circular *1],
+      config: [Object],
+      dialect: [Circular *2],
+      versionPromise: null,
+      dialectName: 'mysql',
+      pool: [Pool],
+      lib: [Object]
+    },
+    queryGenerator: MySQLQueryGenerator {
+      sequelize: [Circular *1],
+      options: [Object],
+      dialect: 'mysql',
+      _dialect: [Circular *2],
+      OperatorMap: [Object],
+      typeValidation: undefined
+    },
+    queryInterface: MySQLQueryInterface {
+      sequelize: [Circular *1],
+      queryGenerator: [MySQLQueryGenerator]
+    }
+  },
+  queryInterface: MySQLQueryInterface {
+    sequelize: [Circular *1],
+    queryGenerator: MySQLQueryGenerator {
+      sequelize: [Circular *1],
+      options: [Object],
+      dialect: 'mysql',
+      _dialect: [MysqlDialect],
+      OperatorMap: [Object],
+      typeValidation: undefined
+    }
+  },
+  models: {},
+  modelManager: ModelManager { models: [], sequelize: [Circular *1] },
+  connectionManager: <ref *3> ConnectionManager {
+    sequelize: [Circular *1],
+    config: {
+      database: 'board',
+      username: 'root',
+      password: 'root',
+      host: '127.0.0.1',
+      port: 3306,
+      pool: [Object],
+      protocol: 'tcp',
+      native: false,
+      ssl: undefined,
+      replication: false,
+      dialectModule: null,
+      dialectModulePath: null,
+      keepDefaultTimezone: undefined,
+      dialectOptions: undefined
+    },
+    dialect: <ref *2> MysqlDialect {
+      sequelize: [Circular *1],
+      connectionManager: [Circular *3],
+      queryGenerator: [MySQLQueryGenerator],
+      queryInterface: [MySQLQueryInterface]
+    },
+    versionPromise: null,
+    dialectName: 'mysql',
+    pool: Pool {
+      log: false,
+      idleTimeoutMillis: 10000,
+      acquireTimeoutMillis: 60000,
+      reapIntervalMillis: 1000,
+      maxUsesPerResource: Infinity,
+      _factory: [Object],
+      _count: 0,
+      _draining: false,
+      _pendingAcquires: [],
+      _inUseObjects: [],
+      _availableObjects: [],
+      _removeIdleScheduled: false
+    },
+    lib: {
+      createConnection: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      Connection: [class Connection extends EventEmitter],
+      createPool: [Function (anonymous)],
+      createPoolCluster: [Function (anonymous)],
+      createQuery: [Function: createQuery],
+      Pool: [class Pool extends EventEmitter],
+      createServer: [Function (anonymous)],
+      PoolConnection: [Function],
+      escape: [Function: escape],
+      escapeId: [Function: escapeId],
+      format: [Function: format],
+      raw: [Function: raw],
+      createConnectionPromise: [Getter],
+      createPoolPromise: [Getter],
+      createPoolClusterPromise: [Getter],
+      Types: [Getter],
+      Charsets: [Getter],
+      CharsetToEncoding: [Getter],
+      setMaxParserCache: [Function (anonymous)],
+      clearParserCache: [Function (anonymous)]
+    }
+  }
+}
